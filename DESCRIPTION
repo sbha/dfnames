@@ -1,0 +1,13 @@
+Package: dfnames
+Title: dfnames
+Version: 0.0.0.9000
+Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
+Description: Functions to work with data frame names.
+    Prints data frame variable/column names in the console in an easy to copy and paste format.
+    Converts data frame name formats to snake_case or PaschalCase
+Depends:
+    R (>= 3.3.0)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1

@@ -1,4 +1,4 @@
-export(camal_caser)
+export(camel_caser)
 export(df_names)
 export(pc_names)
 export(paschal_caser)

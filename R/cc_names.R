@@ -1,16 +1,16 @@
-#' @title camalcaser
+#' @title camelcaser
 #'
-#' @description Function to convert data frame names to camalCase
+#' @description Function to convert data frame names to camelCase
 #'
 #' @param names
 #'
 #' @return NULL
 #'
-#' @examples camal_caser
+#' @examples camel_caser
 #'
-#' @export camal_caser
+#' @export camel_caser
 
-camal_caser <- function(x){
+camel_caser <- function(x){
   x <- trimws(x)
   x <- gsub("[[:punct:] ]", "_", x)
   x <- gsub("_+", " ", x)

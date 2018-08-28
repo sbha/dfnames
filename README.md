@@ -1,6 +1,4 @@
 # dfnames
-Functions for working with data frame names.
-
 ## Overview
 Functions to work with data frame names. Prints data frame variable/column names in the console in an easy to copy and paste format. Converts data frame name formats to snake_case, PaschalCase, or camelCase.
 
@@ -23,5 +21,22 @@ iris %>%
 #>    SepalLength SepalWidth PetalLength PetalWidth Species
 #> 1         5.1        3.5         1.4        0.2  setosa
 #> 2         4.9        3.0         1.4        0.2  setosa
+
+
+# printing the column names:
+df_names(iris)
+#> sepal_length
+#> sepal_width
+#> petal_length
+#> petal_width
+#> species
+
+# printing the column names separated by commas:
+df_names(iris, comma = TRUE)
+#> sepal_length,
+#> sepal_width,
+#> petal_length,
+#> petal_width,
+#> species
 
 ```

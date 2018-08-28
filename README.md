@@ -1,2 +1,27 @@
 # dfnames
-Functions for working with data frame names
+Functions for working with data frame names.
+
+## Overview
+Functions to work with data frame names. Prints data frame variable/column names in the console in an easy to copy and paste format. Converts data frame name formats to snake_case, PaschalCase, or camelCase.
+
+## Usage
+```r
+library(dfnames)
+
+names(iris) <- snake_caser(names(iris))
+head(iris, 2)
+#>    sepal_length sepal_width petal_length petal_width species
+#> 1          5.1         3.5          1.4         0.2  setosa
+#> 2          4.9         3.0          1.4         0.2  setosa
+
+# or as a part of a dplyr chain:
+library(dplyr)
+
+iris %>% 
+  rename_all(~paschal_caser(.)) %>% 
+  head(2)
+#>    SepalLength SepalWidth PetalLength PetalWidth Species
+#> 1         5.1        3.5         1.4        0.2  setosa
+#> 2         4.9        3.0         1.4        0.2  setosa
+
+```

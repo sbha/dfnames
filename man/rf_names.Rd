@@ -2,7 +2,7 @@
 \alias{rf_names}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Convert data frame names to snake_case
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
@@ -45,9 +45,8 @@ rf_names(x, df = T)
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+# convert data frame names to snake_case
+snake_caser(names(iris))
 
 ## The function is currently defined as
 function (x, df = T) 

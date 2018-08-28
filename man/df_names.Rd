@@ -2,7 +2,7 @@
 \alias{df_names}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Print names in an easy to copy format
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
@@ -48,9 +48,15 @@ df_names(df_name, regex_pattern, comma)
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+#print data frame names in console
+df_names(iris)
+
+#print data frame names in console with commas
+df_names(iris, comma = TRUE)
+
+#print data frame names in console that matcha regular expression pattern
+df_names(iris, regex = '^S')
+
 
 ## The function is currently defined as
 function (df_name, regex_pattern, comma) 

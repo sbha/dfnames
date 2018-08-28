@@ -2,18 +2,18 @@
 \alias{camel_caser}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Convert data frame names to camalCase
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Converts data frame names to camalCase.
 }
 \usage{
-camel_caser(x)
+camel_caser(names(x))
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x}{
-%%     ~~Describe \code{x} here~~
+an R object
 }
 }
 \details{
@@ -42,9 +42,8 @@ camel_caser(x)
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+# convert data frame names to camelCase
+camel_caser(names(iris))
 
 ## The function is currently defined as
 function (x) 

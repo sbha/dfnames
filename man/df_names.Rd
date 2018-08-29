@@ -57,36 +57,7 @@ df_names(iris, comma = TRUE)
 #print data frame names in console that matcha regular expression pattern
 df_names(iris, regex = '^S')
 
-
-## The function is currently defined as
-function (df_name, regex_pattern, comma) 
-{
-    if (missing(comma)) {
-        sepc <- "\n"
-    }
-    else {
-        if (comma == TRUE) 
-            sepc <- ",\n"
-        if (comma == FALSE) 
-            sepc <- "\n"
-    }
-    if (exists("df_name") && is.data.frame(get("df_name"))) {
-        if (missing(regex_pattern)) {
-            cat(names(df_name), sep = sepc)
-        }
-        else {
-            names(df_name) <- names(df_name)[grepl(regex_pattern, 
-                names(df_name), ignore.case = TRUE)]
-            df_names_out <- names(df_name)[!is.na(names(df_name))]
-            cat(df_names_out, sep = sepc)
-        }
-    }
-    else {
-        print("must enter the name of a valid data frame")
-    }
-  }
-}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+%\keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")
+%\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

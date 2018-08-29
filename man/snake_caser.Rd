@@ -45,19 +45,7 @@ snake_caser(x)
 # convert data frame names to snake_case
 snake_caser(names(iris))
 
-## The function is currently defined as
-function (x) 
-{
-    x <- trimws(x)
-    x <- gsub("([a-z])([A-Z])", "\\1_\\2", x)
-    x <- gsub("[[:punct:] ]", "_", x)
-    x <- gsub("_+", "_", x)
-    x <- gsub("^_|_$", "", x)
-    x <- tolower(x)
-    x
-  }
-}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+%\keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")
+%\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

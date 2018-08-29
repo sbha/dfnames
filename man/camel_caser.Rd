@@ -45,23 +45,7 @@ an R object
 # convert data frame names to camelCase
 camel_caser(names(iris))
 
-## The function is currently defined as
-function (x) 
-{
-    x <- trimws(x)
-    x <- gsub("[[:punct:] ]", "_", x)
-    x <- gsub("_+", " ", x)
-    x <- gsub("^_|_$", "", x)
-    x <- gsub("\\s+", " ", x)
-    x <- gsub("(^|[[:space:]])([[:alpha:]])", "\\1\\U\\2", x, 
-        perl = TRUE)
-    x <- gsub("([A-Z])([A-Z]+)", "\\1\\L\\2", x, perl = TRUE)
-    x <- gsub("\\s+", "", x)
-    x <- gsub("^([A-Z])", "\\L\\1", x, perl = TRUE)
-    x
-  }
-}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+%\keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")
+%\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

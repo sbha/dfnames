@@ -6,9 +6,10 @@ Convert data frame names to snake_case
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Deprecated, use \code{\link[dfnames:camel_caser]{dfnames::camel_caser()}} instead.
 }
 \usage{
-rf_names(x, df = T)
+rf_names(x, df = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -47,22 +48,7 @@ rf_names(x, df = T)
 \examples{
 # convert data frame names to snake_case
 snake_caser(names(iris))
-
-## The function is currently defined as
-function (x, df = T) 
-{
-    arg <- deparse(substitute(x))
-    if (df == T & !grepl("^names\\(.*\\)$", trimws(arg))) 
-        stop("use the argument 'df=F' to use on non-data frame names")
-    x <- trimws(x)
-    x <- gsub("([a-z])([A-Z])", "\\1_\\2", x)
-    x <- gsub("[[:punct:] ]", "_", x)
-    x <- gsub("_+", "_", x)
-    x <- gsub("^_|_$", "", x)
-    x <- tolower(x)
-  }
-}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+%%\keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")
+%%\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

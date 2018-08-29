@@ -45,4 +45,10 @@ df_names(iris, comma = TRUE)
 #> petal_width,
 #> species
 
+# printing column names matching a regular expression pattern:
+df_names(iris, regex = '^s')
+#> sepal_length,
+#> sepal_width,
+#> species
+
 ```

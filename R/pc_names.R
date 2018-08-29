@@ -19,6 +19,5 @@ paschal_caser <- function(x){
   x <- gsub("(^|[[:space:]])([[:alpha:]])", "\\1\\U\\2", x, perl = TRUE)
   x <- gsub("([A-Z])([A-Z]+)", "\\1\\L\\2", x, perl = TRUE)
   x <- gsub("\\s+", "", x)
-  #x <- ifelse(x == '', 'missing_name', x)
   x
 }

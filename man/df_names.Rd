@@ -56,7 +56,7 @@ df_names(iris, comma = TRUE)
 
 #print data frame names in console that matcha regular expression pattern
 df_names(iris, regex = '^S')
-
+}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 %\keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")

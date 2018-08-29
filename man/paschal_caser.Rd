@@ -44,7 +44,7 @@ paschal_caser(x)
 \examples{
 # convert data frame names to PaschalCase
 paschal_caser(names(iris))
-
+}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 %\keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")

@@ -17,8 +17,6 @@ snake_caser <- function(x){
   x <- gsub("_+", "_", x)
   x <- gsub("^_|_$", "", x)
   x <- tolower(x)
-  #x <- ifelse(x == '', 'missing_name', x)
   x
 }
-
 

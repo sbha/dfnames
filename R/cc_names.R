@@ -20,6 +20,5 @@ camel_caser <- function(x){
   x <- gsub("([A-Z])([A-Z]+)", "\\1\\L\\2", x, perl = TRUE)
   x <- gsub("\\s+", "", x)
   x <- gsub("^([A-Z])", "\\L\\1", x, perl = TRUE)
-  #x <- ifelse(x == '', 'missing_name', x)
   x
 }

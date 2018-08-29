@@ -48,6 +48,7 @@ rf_names(x, df = TRUE)
 \examples{
 # convert data frame names to snake_case
 snake_caser(names(iris))
+}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 %%\keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")

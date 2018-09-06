@@ -2,6 +2,8 @@ export(camel_caser)
 export(df_names)
 #export(pc_names)
 export(paschal_caser)
+export(reformat_names)
 export(rf_names)
 export(snake_caser)
+
 

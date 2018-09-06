@@ -2,14 +2,14 @@
 \alias{rf_names}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Convert data frame names to snake_case
+Convert data frame names to snake_case, camelCase, or PaschalCase
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
-Deprecated, use \code{\link[dfnames:camel_caser]{dfnames::camel_caser()}} instead.
+Takes the naming format as an argument.
 }
 \usage{
-rf_names(x, df = TRUE)
+rf_names(x, case = 'snake')
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -47,7 +47,7 @@ rf_names(x, df = TRUE)
 }
 \examples{
 # convert data frame names to snake_case
-snake_caser(names(iris))
+reformat_names(names(iris), case = 'snake')
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

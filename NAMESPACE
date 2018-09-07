@@ -1,5 +1,6 @@
 export(camel_caser)
 export(df_names)
+export(export_caser)
 #export(pc_names)
 export(paschal_caser)
 export(reformat_names)

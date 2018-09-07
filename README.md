@@ -3,7 +3,7 @@
 Functions to work with data frame names. 
   
 * Converts data frame name formats to snake_case, PaschalCase, or camelCase. 
-* Prints data frame column names in the console in an easy to copy and paste format. 
+* Prints data frame names in the console in an easy to copy and paste format. 
 
 ## Installation
 ``` r
@@ -14,6 +14,11 @@ devtools::install_github("sbha/dfnames")
 ## Usage
 ```r
 library(dfnames)
+
+head(iris, 2)
+#>   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+#> 1          5.1         3.5          1.4         0.2  setosa
+#> 2          4.9         3.0          1.4         0.2  setosa
 
 names(iris) <- snake_caser(names(iris))
 head(iris, 2)

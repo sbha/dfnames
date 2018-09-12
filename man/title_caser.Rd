@@ -1,14 +1,14 @@
-\name{export_caser}
-\alias{export_caser}
+\name{title_caser}
+\alias{title_caser}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Convert data frame names to Export Case
+Convert data frame names to Title Case
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-export_caser(x)
+title_caser(x)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -42,8 +42,8 @@ export_caser(x)
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-# convert data frame names to Export Case
-export_caser(names(iris))
+# convert data frame names to Title Case
+title_caser(names(iris))
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

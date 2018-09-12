@@ -18,9 +18,9 @@ reformat_names <- function(names, case = 'snake'){
     camel_caser(names)
   } else if (case == 'paschal'){
     paschal_caser(names)
-  } else if (case == 'export'){
-    export_caser(names)
+  } else if (case == 'title'){
+    title_caser(names)
   } else{
-    print("the case argument must be set as either 'camel', 'paschal', 'snake', or 'export'")
+    print("the case argument must be set as either 'camel', 'paschal', 'snake', or 'title'")
   }
 }

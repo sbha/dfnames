@@ -2,7 +2,7 @@
 ## Overview
 Functions to work with data frame names. 
   
-* Converts data frame name formats to snake_case, PaschalCase, or camelCase. 
+* Converts data frame name formats to snake_case, PaschalCase, camelCase, or Title Case. 
 * Prints data frame names in the console in an easy to copy and paste format. 
 
 ## Installation

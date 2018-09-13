@@ -1,9 +1,9 @@
 # dfnames
 ## Overview
-Functions to work with data frame names. 
+Functions for working with data frame names. 
   
-* Converts data frame name formats to snake_case, PaschalCase, camelCase, or Title Case. 
-* Prints data frame names in the console in an easy to copy and paste format. 
+* Convert data frame name formats to snake_case, PaschalCase, camelCase, or Title Case. 
+* Print data frame names in the console in an easy to copy and paste format. 
 
 ## Installation
 ``` r

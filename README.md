@@ -15,18 +15,20 @@ devtools::install_github("sbha/dfnames")
 ```r
 library(dfnames)
 
+# normal column names:
 head(iris, 2)
 #>   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 #> 1          5.1         3.5          1.4         0.2  setosa
 #> 2          4.9         3.0          1.4         0.2  setosa
 
+# convert to snake_case
 names(iris) <- snake_caser(names(iris))
 head(iris, 2)
 #>    sepal_length sepal_width petal_length petal_width species
 #> 1          5.1         3.5          1.4         0.2  setosa
 #> 2          4.9         3.0          1.4         0.2  setosa
 
-# or as a part of a dplyr chain:
+# convert as a part of a dplyr chain:
 library(dplyr)
 
 iris %>% 
@@ -37,7 +39,7 @@ iris %>%
 #> 2         4.9        3.0         1.4        0.2  setosa
 
 
-# printing column names:
+# print column names:
 df_names(iris)
 #> sepal_length
 #> sepal_width
@@ -45,7 +47,7 @@ df_names(iris)
 #> petal_width
 #> species
 
-# printing column names separated by commas:
+# print column names separated by commas:
 df_names(iris, comma = TRUE)
 #> sepal_length,
 #> sepal_width,
@@ -53,7 +55,7 @@ df_names(iris, comma = TRUE)
 #> petal_width,
 #> species
 
-# printing column names matching a regular expression pattern:
+# print column names matching a regular expression pattern:
 df_names(iris, regex = '^s', comma = TRUE)
 #> sepal_length,
 #> sepal_width,

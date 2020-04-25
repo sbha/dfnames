@@ -2,25 +2,26 @@
 #'
 #' @description Function to convert data frame names to a standardized format
 #'
-#' @param names
+#' @param names data frame column names
+#' @param format name format 
 #'
 #' @return NULL
 #'
-#' @examples reformat_names
+#' @examples reformat_names(iris, 'snake')
 #'
 #' @export reformat_names
 
-reformat_names <- function(names, case = 'snake'){
-  #if (!case %in% c('camel', 'paschal', 'snake'))
-  if (case == 'snake') {
+reformat_names <- function(names, format = 'snake'){
+  #if (!format %in% c('camel', 'paschal', 'snake'))
+  if (format == 'snake') {
     snake_caser(names)
-  } else if (case == 'camel'){
+  } else if (format == 'camel'){
     camel_caser(names)
-  } else if (case == 'paschal'){
+  } else if (format == 'paschal'){
     paschal_caser(names)
-  } else if (case == 'title'){
+  } else if (format == 'title'){
     title_caser(names)
   } else{
-    print("the case argument must be set as either 'camel', 'paschal', 'snake', or 'title'")
+    print("the format argument must be set as either 'camel', 'paschal', 'snake', or 'title'")
   }
 }

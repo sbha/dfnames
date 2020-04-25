@@ -2,11 +2,11 @@
 #'
 #' @description Function to convert data frame names to snake_case
 #'
-#' @param names
+#' @param names data frame column names
 #'
 #' @return NULL
 #'
-#' @examples snake_caser
+#' @examples snake_caser(iris)
 #'
 #' @export snake_caser
 

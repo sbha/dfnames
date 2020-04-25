@@ -2,11 +2,11 @@
 #'
 #' @description Function to convert data frame names to title names for export
 #'
-#' @param names
+#' @param names data frame column names
 #'
 #' @return NULL
 #'
-#' @examples title_caser
+#' @examples title_caser(iris)
 #'
 #' @export title_caser
 

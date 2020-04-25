@@ -2,11 +2,11 @@
 #'
 #' @description Function to convert data frame names to PaschalCase
 #'
-#' @param names
+#' @param names data frame column names
 #'
 #' @return NULL
 #'
-#' @examples paschal_caser
+#' @examples paschal_caser(iris)
 #'
 #' @export paschal_caser
 

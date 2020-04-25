@@ -2,11 +2,9 @@
 #'
 #' @description Function to convert data frame names to camelCase
 #'
-#' @param names
+#' @param names data frame column names
 #'
-#' @return NULL
-#'
-#' @examples camel_caser
+#' @examples camel_caser(iris)
 #'
 #' @export camel_caser
 

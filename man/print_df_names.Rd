@@ -2,7 +2,9 @@
 % Please edit documentation in R/print_df_names.R
 \name{print_df_names}
 \alias{print_df_names}
-\title{Print data frame variable names}
+\title{Print data frame column names
+
+This function prints data frame column names in the console in an easy to copy and paste format}
 \usage{
 print_df_names(df, regex_pattern, comma)
 }
@@ -16,10 +18,13 @@ expression to filter column names}
 with a comma}
 }
 \description{
+Print data frame column names
+
 This function prints data frame column names in the console in an easy to copy and paste format
 }
 \examples{
 print_df_names('iris')
+
 }
 \keyword{column}
 \keyword{names}

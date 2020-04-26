@@ -1,4 +1,6 @@
-#' @title titlecaser
+#' @name titlecaser
+#'
+#' @title Convert data frame column names to Title Case
 #'
 #' @description Function to convert data frame names to title names for export
 #'
@@ -6,8 +8,7 @@
 #'
 #' @examples title_caser(names(iris))
 #'
-#' @export title_caser
-
+#' @export
 title_caser <- function(names){
   x <- snake_caser(names)
   x <- gsub('_', ' ', x)

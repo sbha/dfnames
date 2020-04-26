@@ -1,4 +1,6 @@
-#' @title snakecaser
+#' @title Convert data frame column names to snake_case
+#'
+#' @name snakecaser
 #'
 #' @description Function to convert data frame names to snake_case
 #'
@@ -6,8 +8,7 @@
 #'
 #' @examples snake_caser(names(iris))
 #'
-#' @export snake_caser
-
+#' @export 
 snake_caser <- function(names){
   x <- trimws(names)
   x <- gsub("([a-z])([A-Z])", "\\1_\\2", x)

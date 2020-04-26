@@ -1,4 +1,6 @@
-#' @title camelcaser
+#' @name camelcaser
+#'
+#' @title Convert data frame column names to camelCase
 #'
 #' @description Function to convert data frame names to camelCase
 #'
@@ -6,8 +8,7 @@
 #'
 #' @examples camel_caser(names(iris))
 #' 
-#' @export camel_caser
-
+#' @export 
 camel_caser <- function(names){
   x <- trimws(names)
   x <- gsub("[[:punct:] ]", "_", x)

@@ -1,6 +1,9 @@
-#' Print data frame variable names
+#' @name print_df_names
+#' 
+#' @title Print data frame column names
 #'
-#' This function prints data frame column names in the console in an easy to copy and paste format
+#' @descritpion This function prints data frame column names in the console in an easy to copy and paste format
+#' 
 #' @param df name of data frame to print column names
 #' @param regex_pattern optional argument to use a regular 
 #'        expression to filter column names
@@ -9,15 +12,9 @@
 #'             
 #' @keywords column names
 #' 
-#' @export  print_df_names
-#' 
 #' @examples print_df_names('iris')
-
-# Data frame names can be filtered using regular expressions
-# Data frame names can be printed with a seperating comma
-
-# if no regex match, warn
-
+#'
+#' @export
 print_df_names <- function(df, regex_pattern, comma){
     if(missing(comma)){
       sepc <- '\n'
@@ -34,7 +31,10 @@ print_df_names <- function(df, regex_pattern, comma){
         cat(df_out, sep = sepc)
       }
     } else {
-      print('must enter the name of a valid data frame') 
+      cat('must enter the name of a valid data frame') 
     }
   }
 
+# Data frame names can be filtered using regular expressions
+# Data frame names can be printed with a seperating comma
+# if no regex match, warn

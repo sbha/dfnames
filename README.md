@@ -15,7 +15,7 @@ devtools::install_github("sbha/dfnames")
 ```r
 library(dfnames)
 
-# raw column names:
+# review raw column names:
 head(iris, 2)
 #>   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 #> 1          5.1         3.5          1.4         0.2  setosa
@@ -37,6 +37,10 @@ iris %>%
 #>    SepalLength SepalWidth PetalLength PetalWidth Species
 #> 1         5.1        3.5         1.4        0.2  setosa
 #> 2         4.9        3.0         1.4        0.2  setosa
+
+
+# title_caser should only be used for exporting
+write.csv(iris, 'directory/path/export_file.csv', row.names = FALSE)
 
 
 # print column names:

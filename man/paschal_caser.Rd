@@ -2,7 +2,7 @@
 % Please edit documentation in R/pc_names.R
 \name{paschal_caser}
 \alias{paschal_caser}
-\title{PaschalCaser}
+\title{Convert data frame column names to PaschalCase}
 \usage{
 paschal_caser(names)
 }

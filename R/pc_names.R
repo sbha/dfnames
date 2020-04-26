@@ -1,4 +1,6 @@
-#' @title PaschalCaser
+#' Convert data frame column names to PaschalCase
+#'
+#' @name paschal_caser
 #'
 #' @description Function to convert data frame names to PaschalCase
 #'
@@ -6,8 +8,7 @@
 #'
 #' @examples paschal_caser(names(iris))
 #'
-#' @export paschal_caser
-
+#' @export
 paschal_caser <- function(names){
   x <- trimws(names)
   x <- gsub("[[:punct:] ]", "_", x)

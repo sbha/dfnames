@@ -2,7 +2,7 @@
 % Please edit documentation in R/rf_names.R
 \name{reformat_names}
 \alias{reformat_names}
-\title{reformat_names}
+\title{Reformat data frame column names}
 \usage{
 reformat_names(names, format = "snake")
 }

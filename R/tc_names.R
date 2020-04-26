@@ -4,14 +4,12 @@
 #'
 #' @param names data frame column names
 #'
-#' @return NULL
-#'
-#' @examples title_caser(iris)
+#' @examples title_caser(names(iris))
 #'
 #' @export title_caser
 
-title_caser <- function(x){
-  x <- snake_caser(x)
+title_caser <- function(names){
+  x <- snake_caser(names)
   x <- gsub('_', ' ', x)
   x <- gsub("(^|[[:space:]])([[:alpha:]])", "\\1\\U\\2", x, perl=TRUE)
   x

@@ -5,9 +5,7 @@
 #' @param names data frame column names
 #' @param format name format 
 #'
-#' @return NULL
-#'
-#' @examples reformat_names(iris, 'snake')
+#' @examples reformat_names(names(iris), 'snake')
 #'
 #' @export reformat_names
 

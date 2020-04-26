@@ -4,14 +4,12 @@
 #'
 #' @param names data frame column names
 #'
-#' @return NULL
-#'
-#' @examples snake_caser(iris)
+#' @examples snake_caser(names(iris))
 #'
 #' @export snake_caser
 
-snake_caser <- function(x){
-  x <- trimws(x)
+snake_caser <- function(names){
+  x <- trimws(names)
   x <- gsub("([a-z])([A-Z])", "\\1_\\2", x)
   x <- gsub("[[:punct:] ]", "_", x)
   x <- gsub("_+", "_", x)

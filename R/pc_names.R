@@ -4,14 +4,12 @@
 #'
 #' @param names data frame column names
 #'
-#' @return NULL
-#'
-#' @examples paschal_caser(iris)
+#' @examples paschal_caser(names(iris))
 #'
 #' @export paschal_caser
 
-paschal_caser <- function(x){
-  x <- trimws(x)
+paschal_caser <- function(names){
+  x <- trimws(names)
   x <- gsub("[[:punct:] ]", "_", x)
   x <- gsub("_+", " ", x)
   x <- gsub("^_|_$", "", x)

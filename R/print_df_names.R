@@ -5,11 +5,13 @@
 #' @param regex_pattern optional argument to use a regular 
 #'        expression to filter column names
 #' @param comma optional argument to seperate column names
-#'        with a comma        
+#'        with a comma   
+#'             
 #' @keywords column names
-#' @export
-#' @examples
-#' print_df_names('iris')
+#' 
+#' @export  print_df_names
+#' 
+#' @examples print_df_names('iris')
 
 # Data frame names can be filtered using regular expressions
 # Data frame names can be printed with a seperating comma

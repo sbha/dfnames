@@ -4,12 +4,12 @@
 #'
 #' @param names data frame column names
 #'
-#' @examples camel_caser(iris)
-#'
+#' @examples camel_caser(names(iris))
+#' 
 #' @export camel_caser
 
-camel_caser <- function(x){
-  x <- trimws(x)
+camel_caser <- function(names){
+  x <- trimws(names)
   x <- gsub("[[:punct:] ]", "_", x)
   x <- gsub("_+", " ", x)
   x <- gsub("^_|_$", "", x)

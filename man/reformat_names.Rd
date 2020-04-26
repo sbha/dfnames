@@ -15,6 +15,6 @@ reformat_names(names, format = "snake")
 Function to convert data frame names to a standardized format
 }
 \examples{
-reformat_names(iris, 'snake')
+reformat_names(names(iris), 'snake')
 
 }

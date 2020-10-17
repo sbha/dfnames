@@ -39,7 +39,8 @@ iris %>%
 #> 2         4.9        3.0         1.4        0.2  setosa
 
 
-# title_caser should only be used for exporting
+# to_title_case should only be used for exporting data, otherwise the 
+# data frame could have spaces in its column names:
 iris %>% 
   rename_all(~to_title_case(.)) %>% 
   write.csv('~/directory/path/export_file.csv', row.names = FALSE)

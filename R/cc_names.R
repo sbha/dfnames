@@ -1,4 +1,4 @@
-#' @name camelcaser
+#' @name to_camel_case
 #'
 #' @title Convert data frame column names to camelCase
 #'
@@ -6,10 +6,10 @@
 #'
 #' @param names data frame column names
 #'
-#' @examples camel_caser(names(iris))
+#' @examples to_camel_case(names(iris))
 #' 
 #' @export 
-camel_caser <- function(names){
+to_camel_case <- function(names){
   x <- trimws(names)
   x <- gsub("[[:punct:] ]", "_", x)
   x <- gsub("_+", " ", x)
@@ -20,4 +20,9 @@ camel_caser <- function(names){
   x <- gsub("\\s+", "", x)
   x <- gsub("^([A-Z])", "\\L\\1", x, perl = TRUE)
   x
+}
+
+camel_caser = function(names) {
+  .Deprecated("to_camel_case")
+  to_camel_case(names)
 }

@@ -1,15 +1,15 @@
-#' Convert data frame column names to PaschalCase
+#' Convert data frame column names to PascalCase
 #'
-#' @name paschal_caser
+#' @name to_paschal_case
 #'
-#' @description Function to convert data frame names to PaschalCase
+#' @description Function to convert data frame names to PascalCase
 #'
 #' @param names data frame column names
 #'
-#' @examples paschal_caser(names(iris))
+#' @examples to_pascal_case(names(iris))
 #'
 #' @export
-paschal_caser <- function(names){
+to_pascal_case <- function(names){
   x <- trimws(names)
   x <- gsub("[[:punct:] ]", "_", x)
   x <- gsub("_+", " ", x)
@@ -19,4 +19,9 @@ paschal_caser <- function(names){
   x <- gsub("([A-Z])([A-Z]+)", "\\1\\L\\2", x, perl = TRUE)
   x <- gsub("\\s+", "", x)
   x
+}
+
+pascal_caser = function(names) {
+  .Deprecated("to_pascal_case")
+  to_pascal_case(names)
 }

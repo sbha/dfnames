@@ -22,7 +22,7 @@ head(iris, 2)
 #> 2          4.9         3.0          1.4         0.2  setosa
 
 # convert to snake_case:
-names(iris) <- snake_caser(names(iris))
+names(iris) <- to_snake_case(names(iris))
 head(iris, 2)
 #>    sepal_length sepal_width petal_length petal_width species
 #> 1          5.1         3.5          1.4         0.2  setosa
@@ -32,7 +32,7 @@ head(iris, 2)
 library(dplyr)
 
 iris %>% 
-  rename_all(~paschal_caser(.)) %>% 
+  rename_all(~to_pascal_case(.)) %>% 
   head(2)
 #>    SepalLength SepalWidth PetalLength PetalWidth Species
 #> 1         5.1        3.5         1.4        0.2  setosa
@@ -41,8 +41,8 @@ iris %>%
 
 # title_caser should only be used for exporting
 iris %>% 
-  rename_all(~title_caser(.)) %>% 
-  write.csv('directory/path/export_file.csv', row.names = FALSE)
+  rename_all(~to_title_case(.)) %>% 
+  write.csv('~/directory/path/export_file.csv', row.names = FALSE)
 
 
 # print column names:

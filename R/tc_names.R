@@ -6,13 +6,17 @@
 #'
 #' @param names data frame column names
 #'
-#' @examples title_caser(names(iris))
+#' @examples to_title_case(names(iris))
 #'
 #' @export
-title_caser <- function(names){
+to_title_case <- function(names){
   x <- snake_caser(names)
   x <- gsub('_', ' ', x)
   x <- gsub("(^|[[:space:]])([[:alpha:]])", "\\1\\U\\2", x, perl=TRUE)
   x
 }
 
+title_caser = function(names) {
+  .Deprecated("to_title_case")
+  to_title_case(names)
+}

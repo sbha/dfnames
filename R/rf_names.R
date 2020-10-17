@@ -13,14 +13,14 @@
 
 reformat_names <- function(names, format = 'snake'){
   if (format == 'snake') {
-    snake_caser(names)
+    to_snake_case(names)
   } else if (format == 'camel'){
-    camel_caser(names)
-  } else if (format == 'paschal'){
-    paschal_caser(names)
+    to_camel_case(names)
+  } else if (format == 'pascal'){
+    to_pascal_case(names)
   } else if (format == 'title'){
-    title_caser(names)
+    to_title_case(names)
   } else{
-    cat("the format argument must be set as 'camel', 'paschal', 'snake', or 'title'")
+    cat("the format argument must be set as 'camel', 'pascal', 'snake', or 'title'")
   }
 }

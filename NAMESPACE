@@ -1,7 +1,11 @@
 export(camel_caser)
 export(print_df_names)
-export(paschal_caser)
+export(pascal_caser)
 export(reformat_names)
 export(snake_caser)
 export(title_caser)
+export(to_camel_case)
+export(to_pascal_case)
+export(to_snake_case)
+export(to_title_case)
 

@@ -1,15 +1,15 @@
 #' @title Convert data frame column names to snake_case
 #'
-#' @name snakecaser
+#' @name to_snake_case
 #'
 #' @description Function to convert data frame names to snake_case
 #'
 #' @param names data frame column names
 #'
-#' @examples snake_caser(names(iris))
+#' @examples to_snake_case(names(iris))
 #'
 #' @export 
-snake_caser <- function(names){
+to_snake_case <- function(names){
   x <- trimws(names)
   x <- gsub("([a-z])([A-Z])", "\\1_\\2", x)
   x <- gsub("[[:punct:] ]", "_", x)
@@ -19,3 +19,7 @@ snake_caser <- function(names){
   x
 }
 
+snake_caser = function(names) {
+  .Deprecated("to_snake_case")
+  to_snake_case(names)
+}

@@ -2,14 +2,16 @@ Package: dfnames
 Title: Functions for working with data frame names
 Version: 0.0.0.9000
 Authors@R: person("Stu", "Harty", email = "stuart.harty@gmail.com", role = c("aut", "cre"))
-Description: Functions for working with data frame names. Prints data frame variable/
-  column names in the console in an easy to copy and paste format. Converts data frame 
-  name formats to snake_case, PaschalCase, camelCase, or Title Case.
-Depends:
-    R (>= 3.3.0)
+Description: Functions for working with data frame names. Convert data frame 
+  name formats to snake_case, PaschalCase, camelCase, or Title Case. Print 
+  data frame column names in the console in an easy to copy and paste format. 
+Depends: R (>= 3.3.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.0.2
 Suggests: 
+    dplyr,
     testthat (>= 2.1.0)
+URL: https://github.com/sbha/dfnames
+BugReports: https://github.com/sbha/dfnames/issues

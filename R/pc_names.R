@@ -1,8 +1,10 @@
 #' Convert data frame column names to PascalCase
 #'
-#' @name to_paschal_case
+#' @name paschal_caser
 #'
-#' @description Function to convert data frame names to PascalCase
+#' @title Convert data frame column names to PaschalCase
+#'
+#' @description Function to convert data frame names to PaschalCase
 #'
 #' @param names data frame column names
 #'

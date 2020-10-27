@@ -10,14 +10,7 @@
 #' 
 #' @export 
 to_camel_case <- function(names){
-  x <- trimws(names)
-  x <- gsub("[[:punct:] ]", "_", x)
-  x <- gsub("_+", " ", x)
-  x <- gsub("^_|_$", "", x)
-  x <- gsub("\\s+", " ", x)
-  x <- gsub("(^|[[:space:]])([[:alpha:]])", "\\1\\U\\2", x, perl = TRUE)
-  x <- gsub("([A-Z])([A-Z]+)", "\\1\\L\\2", x, perl = TRUE)
-  x <- gsub("\\s+", "", x)
+  x <- to_pascal_case(names)
   x <- gsub("^([A-Z])", "\\L\\1", x, perl = TRUE)
   x
 }

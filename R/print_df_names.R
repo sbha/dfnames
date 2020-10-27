@@ -2,7 +2,8 @@
 #' 
 #' @title Print data frame column names
 #'
-#' @descritpion This function prints data frame column names in the console in an easy to copy and paste format
+#' @descritpion This function prints data frame column names in the 
+#'        console in an easy to copy and paste format
 #' 
 #' @param df name of data frame to print column names
 #' @param regex_pattern optional argument to use a regular 

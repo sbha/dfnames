@@ -3,7 +3,7 @@ Title: Functions for working with data frame names
 Version: 0.0.0.9000
 Authors@R: person("Stu", "Harty", email = "stuart.harty@gmail.com", role = c("aut", "cre"))
 Description: Functions for working with data frame names. Convert data frame 
-  name formats to snake_case, PaschalCase, camelCase, or Title Case. Print 
+  name formats to snake_case, PascalCase, camelCase, or Title Case. Print 
   data frame column names in the console in an easy to copy and paste format. 
 Depends: R (>= 3.3.0)
 License: MIT + file LICENSE

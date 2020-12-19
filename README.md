@@ -1,17 +1,17 @@
 # dfnames
-## Overview
+### Overview
 Functions for working with data frame names. 
   
 * Convert data frame name formats to `snake_case`, `PascalCase`, `camelCase`, or `Title Case`. 
 * Print data frame names in the console in an easy to copy and paste format. 
 
-## Installation
+### Installation
 ``` r
 # install.packages("devtools")
 devtools::install_github("sbha/dfnames")
 ```
 
-## Usage
+### Usage
 ```r
 library(dfnames)
 

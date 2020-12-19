@@ -2,9 +2,10 @@
 % Please edit documentation in R/tc_names.R
 \name{titlecaser}
 \alias{titlecaser}
-\alias{title_caser}
+\alias{to_title_case}
 \title{Convert data frame column names to Title Case}
 \usage{
+to_title_case(names)
 title_caser(names)
 }
 \arguments{
@@ -14,6 +15,6 @@ title_caser(names)
 Function to convert data frame names to title names for export
 }
 \examples{
+to_title_case(names(iris))
 title_caser(names(iris))
-
 }

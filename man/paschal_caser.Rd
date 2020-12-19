@@ -2,9 +2,11 @@
 % Please edit documentation in R/pc_names.R
 \name{paschal_caser}
 \alias{paschal_caser}
+\alias{to_pascal_case}
 \title{Convert data frame column names to PaschalCase}
 \usage{
-paschal_caser(names)
+to_pascal_case(names)
+pascal_caser(names)
 }
 \arguments{
 \item{names}{data frame column names}
@@ -12,7 +14,11 @@ paschal_caser(names)
 \description{
 Function to convert data frame names to PaschalCase
 }
+\details{
+Convert data frame column names to PascalCase
+}
 \examples{
-paschal_caser(names(iris))
+to_pascal_case(names(iris))
+pascal_caser(names(iris))
 
 }

@@ -6,7 +6,6 @@
 \title{Convert data frame column names to PaschalCase}
 \usage{
 to_pascal_case(names)
-pascal_caser(names)
 }
 \arguments{
 \item{names}{data frame column names}
@@ -19,6 +18,6 @@ Convert data frame column names to PascalCase
 }
 \examples{
 to_pascal_case(names(iris))
-pascal_caser(names(iris))
+
 
 }

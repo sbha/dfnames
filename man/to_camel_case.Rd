@@ -5,7 +5,6 @@
 \title{Convert data frame column names to camelCase}
 \usage{
 to_camel_case(names)
-camel_caser(names)
 }
 \arguments{
 \item{names}{data frame column names}
@@ -15,5 +14,4 @@ Function to convert data frame names to camelCase
 }
 \examples{
 to_camel_case(names(iris))
-camel_caser(names(iris))
 }

@@ -6,7 +6,6 @@
 \title{Convert data frame column names to Title Case}
 \usage{
 to_title_case(names)
-title_caser(names)
 }
 \arguments{
 \item{names}{data frame column names}
@@ -16,5 +15,4 @@ Function to convert data frame names to title names for export
 }
 \examples{
 to_title_case(names(iris))
-title_caser(names(iris))
 }

@@ -5,7 +5,6 @@
 \title{Convert data frame column names to snake_case}
 \usage{
 to_snake_case(names)
-snake_caser(names)
 }
 \arguments{
 \item{names}{data frame column names}
@@ -15,5 +14,4 @@ Function to convert data frame names to snake_case
 }
 \examples{
 to_snake_case(names(iris))
-snake_caser(names(iris))
 }

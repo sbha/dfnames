@@ -14,8 +14,3 @@ to_camel_case <- function(names){
   x <- gsub("^([A-Z])", "\\L\\1", x, perl = TRUE)
   x
 }
-
-camel_caser = function(names) {
-  .Deprecated("to_camel_case")
-  to_camel_case(names)
-}

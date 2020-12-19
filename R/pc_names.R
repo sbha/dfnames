@@ -23,7 +23,3 @@ to_pascal_case <- function(names){
   x
 }
 
-pascal_caser = function(names) {
-  .Deprecated("to_pascal_case")
-  to_pascal_case(names)
-}

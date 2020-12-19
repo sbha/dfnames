@@ -1,5 +1,5 @@
 Package: dfnames
-Title: Functions for working with data frame names
+Title: Functions for Working with Data Frame Names
 Version: 0.0.0.9000
 Authors@R: person("Stu", "Harty", email = "stuart.harty@gmail.com", role = c("aut", "cre"))
 Description: Functions for working with data frame names. Convert data frame 

@@ -19,7 +19,3 @@ to_snake_case <- function(names){
   x
 }
 
-snake_caser = function(names) {
-  .Deprecated("to_snake_case")
-  to_snake_case(names)
-}

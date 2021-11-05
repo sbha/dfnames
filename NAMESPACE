@@ -1,3 +1,4 @@
+export(compare_df_names)
 export(print_df_names)
 export(reformat_names)
 export(to_camel_case)

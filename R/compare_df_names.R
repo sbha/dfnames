@@ -1,6 +1,10 @@
-# option to reformat names before comparing using dfnames reformatting functions
-
-compare_df_names <- function(df1, df2, check_missing = TRUE){
+compare_df_names <- function(df1, df2, check_missing = TRUE, clean_names = TRUE){
+  
+  if (clean_names == TRUE){
+    names(df1) <- to_snake_case(names(df1))
+    names(df2) <- to_snake_case(names(df2))
+  }
+  
   
   if (check_missing == TRUE){
     

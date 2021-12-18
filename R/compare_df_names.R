@@ -8,6 +8,8 @@ compare_df_names <- function(df1, df2, check_missing = TRUE, clean_names = TRUE)
   
   if (check_missing == TRUE){
     
+    #cat('the following column names from ', df1, 'are not in ', df2)
+    
     names(df1)[!names(df1) %in% names(df2)]
     
     # summary print missing from df1 in df2

@@ -14,6 +14,7 @@
 to_pascal_case <- function(names){
   x <- trimws(names)
   x <- gsub("[[:punct:] ]", "_", x)
+  x <- make.unique(x, sep = "_")
   x <- gsub("_+", " ", x)
   x <- gsub("^_|_$", "", x)
   x <- gsub("\\s+", " ", x)

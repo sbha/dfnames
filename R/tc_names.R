@@ -11,6 +11,7 @@
 #' @export
 to_title_case <- function(names){
   x <- to_snake_case(names)
+  x <- make.unique(x, sep = "_")
   x <- gsub('_', ' ', x)
   x <- gsub("(^|[[:space:]])([[:alpha:]])", "\\1\\U\\2", x, perl=TRUE)
   x

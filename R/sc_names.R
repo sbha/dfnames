@@ -15,6 +15,7 @@ to_snake_case <- function(names){
   x <- gsub("[[:punct:] ]", "_", x)
   x <- gsub("_+", "_", x)
   x <- gsub("^_|_$", "", x)
+  x <- make.unique(x, sep = "_")
   x <- tolower(x)
   x
 }

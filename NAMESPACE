@@ -1,8 +1,11 @@
 export(compare_df_names)
 export(print_df_names)
 export(reformat_names)
+export(rename_df_from_ls)
 export(to_camel_case)
 export(to_pascal_case)
 export(to_snake_case)
 export(to_title_case)
 
+importFrom(dplyr, all_of)
+importFrom(dplyr,rename_with)

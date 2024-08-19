@@ -4,7 +4,7 @@ rename_df_from_ls <- function(df, l){
   
   l <- l[names(l) %in% names(df)]
   
-  if (!length(l)){
+  if (length(l)){
     
     rename_with(df, ~unlist(l), all_of(names(l)))
     

@@ -1,10 +1,14 @@
 # https://stackoverflow.com/a/72548495/3058123
 
-rename_df_from_ls <- function(df, l){
-  
-  l <- l[names(l) %in% names(df)]
+l <- l[names(l) %in% names(df)]
+
+if (length(l)>0){
   
   rename_with(df, ~unlist(l), all_of(names(l)))
+  
+} else {
+  
+  df
   
 }
 

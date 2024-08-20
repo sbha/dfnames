@@ -1,6 +1,13 @@
 # https://stackoverflow.com/a/72548495/3058123
 
-rename_df_from_ls <- function(df, l){
+rename_df_from_ls <- function(df, l, list_names_as_values = FALSE){
+  
+  # use list names as values
+  if (list_names_as_values){
+    cn <- names(l)
+    names(cn) <- unlist(unname(l))
+    l <- cn %>% as.list()
+  }
   
   l <- l[names(l) %in% names(df)]
   

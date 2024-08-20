@@ -12,13 +12,9 @@ rename_df_from_ls <- function(df, l, list_names_as_values = FALSE){
   l <- l[names(l) %in% names(df)]
   
   if (length(l)){
-    
     rename_with(df, ~unlist(l), all_of(names(l)))
-    
   } else {
-    
     df
-    
   }
 }
 

@@ -12,6 +12,11 @@
 #'
 #' @export
 to_pascal_case <- function(names){
+  
+  if (!is.character(names)) {
+    stop("Input must be a character vector")
+  }
+  
   x <- trimws(names)
   x <- gsub("[[:punct:] ]", "_", x)
   x <- make.unique(x, sep = "_")
@@ -21,6 +26,6 @@ to_pascal_case <- function(names){
   x <- gsub("(^|[[:space:]])([[:alpha:]])", "\\1\\U\\2", x, perl = TRUE)
   x <- gsub("([A-Z])([A-Z]+)", "\\1\\L\\2", x, perl = TRUE)
   x <- gsub("\\s+", "", x)
-  x
+  return(x)
 }
 

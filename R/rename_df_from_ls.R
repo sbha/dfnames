@@ -2,6 +2,11 @@
 
 rename_df_from_ls <- function(df, l, list_names_as_values = FALSE){
   
+  # input validation
+  if (!is.data.frame(df)) stop("df must be a data frame")
+  if (!is.list(l)) stop("l must be a list")
+  if (is.null(names(l))) stop("l must be a named list")
+  
   # use list names as values
   if (list_names_as_values){
     cn <- names(l)
@@ -9,15 +14,16 @@ rename_df_from_ls <- function(df, l, list_names_as_values = FALSE){
     l <- cn %>% as.list()
   }
   
+  # filter to existing columns
   l <- l[names(l) %in% names(df)]
   
   if (length(l)){
     
-    rename_with(df, ~unlist(l), all_of(names(l)))
+    return(rename_with(df, ~unlist(l), all_of(names(l))))
     
   } else {
     
-    df
+    return(df)
     
   }
 }

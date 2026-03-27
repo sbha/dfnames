@@ -9,3 +9,4 @@ export(to_title_case)
 
 importFrom(dplyr, all_of)
 importFrom(dplyr,rename_with)
+importFrom(magrittr,"%>%")

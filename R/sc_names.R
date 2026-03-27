@@ -10,6 +10,11 @@
 #'
 #' @export 
 to_snake_case <- function(names){
+  
+  if (!is.character(names)) {
+    stop("Input must be a character vector")
+  }
+  
   x <- trimws(names)
   x <- gsub("([a-z])([A-Z])", "\\1_\\2", x)
   x <- gsub("[[:punct:] ]", "_", x)
@@ -17,6 +22,6 @@ to_snake_case <- function(names){
   x <- gsub("^_|_$", "", x)
   x <- make.unique(x, sep = "_")
   x <- tolower(x)
-  x
+  return(x)
 }
 
